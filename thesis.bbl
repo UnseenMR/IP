@@ -1,0 +1,94 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{whatisdevops}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc1c8237d565853785a67ece0b343fa0}{%
+           family={codefresh.io},
+           familyi={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{fullhash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{fullhashraw}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{bibnamehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authorbibnamehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authornamehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authorfullhash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authorfullhashraw}{dc1c8237d565853785a67ece0b343fa0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What Is Azure DevOps? Services, Examples, and Best Practices}
+      \verb{urlraw}
+      \verb https://codefresh.io/learn/azure-devops/
+      \endverb
+      \verb{url}
+      \verb https://codefresh.io/learn/azure-devops/
+      \endverb
+    \endentry
+    \entry{ben-kiki2009yaml}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=af524d39d04a6d5f268ba8f9b03ccda3}{%
+           family={Ben-Kiki},
+           familyi={B\bibinithyphendelim K\bibinitperiod},
+           given={Oren},
+           giveni={O\bibinitperiod}}}%
+        {{hash=9df9fe00e4c7e0b52b9aba3ded92aaab}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Clark},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fa4c33ecf7ad13b7e041b1793297dcd5}{%
+           family={Net},
+           familyi={N\bibinitperiod},
+           given={Ingy},
+           giveni={I\bibinitperiod},
+           prefix={döt},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{fullhash}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{fullhashraw}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{bibnamehash}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{authorbibnamehash}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{authornamehash}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{authorfullhash}{838650295a24faa3ff0133dd8c1a41d5}
+      \strng{authorfullhashraw}{838650295a24faa3ff0133dd8c1a41d5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{note}{Available online}
+      \field{title}{YAML Ain't Markup Language (YAML™) Version 1.2}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://yaml.org/spec/1.2/spec.html
+      \endverb
+      \verb{url}
+      \verb https://yaml.org/spec/1.2/spec.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

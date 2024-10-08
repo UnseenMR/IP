@@ -1,0 +1,210 @@
+%% -----------------------------------------------------------------
+%% This file uses UTF-8 encoding
+%%
+%% For compilation use following command:
+%% latexmk -pdf -pvc -bibtex thesis
+%%
+%% -----------------------------------------------------------------
+%%                                     _     _      
+%%      _ __  _ __ ___  __ _ _ __ ___ | |__ | | ___ 
+%%     | '_ \| '__/ _ \/ _` | '_ ` _ \| '_ \| |/ _ \
+%%     | |_) | | |  __/ (_| | | | | | | |_) | |  __/
+%%     | .__/|_|  \___|\__,_|_| |_| |_|_.__/|_|\___|
+%%     |_|                                          
+%%
+%% -----------------------------------------------------------------
+
+\documentclass{kithesis}
+
+% Additional packages
+\usepackage[main=slovak,english]{babel}
+% For thesis written in English just change the order of languages:
+% \usepackage[main=english,slovak]{babel}
+
+\usepackage{listings}  % for source code
+\usepackage{xcolor}
+%\usepackage{cancel}
+\usepackage{graphicx,subcaption,lipsum}
+
+% Listings settings
+% See for details: https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+% \lstset{
+%     basicstyle=\small\ttfamily,  % smaller typewriter font
+%     showstringspaces=false       % don't show spaces in string
+% }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{red}{rgb}{0.6,0,0} 
+\lstloadlanguages{csh}
+
+\lstdefinestyle{mystyle}{
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    morecomment=[l]{//}, %use comment-line-style!
+    morecomment=[s]{/*}{*/}, %for multiline comments
+    showstringspaces=false,
+    morekeywords={ abstract, event, new, struct,
+    as, explicit, null, switch,
+    base, extern, object, this,
+    bool, false, operator, throw,
+    break, finally, out, true,
+    byte, fixed, override, try,
+    case, float, params, typeof,
+    catch, for, private, uint,
+    char, foreach, protected, ulong,
+    checked, goto, public, unchecked,
+    class, if, readonly, unsafe,
+    const, implicit, ref, ushort,
+    continue, in, return, using,
+    decimal, int, sbyte, virtual,
+    default, interface, sealed, volatile,
+    delegate, internal, short, void,
+    do, is, sizeof, while,
+    double, lock, stackalloc,
+    else, long, static,
+    enum, namespace, string},
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    basicstyle=\ttfamily\footnotesize,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+}
+
+\lstset{style=mystyle}
+
+% Location of file with bibliography resources
+\addbibresource{chapters/bibliography.bib}
+
+% Variables
+% \thesisspec{figures/zadavaci-list.png} 
+
+\title{Oleksii Shuba, Danylo Safronov}{Azure DevOps}
+
+\author{Oleksii Shuba, }{Danylo Safronov}
+
+\supervisor{Ing. Tomáš Kormaník} %veduci prace
+%\consultant{Donald E. Knuth} %konzultant
+%\college{University of Žilina}{Žilinská univerzita} %univerzita
+%\faculty{Faculty of Electrical Engineering and informatics}{Fakulta elektrotechniky a informatiky} %fakulta
+%\department{Department of Computers and Informatics}{Katedra počítačov a informatiky} %katedra
+%\departmentacr{DCI}{KPI} % skratka katedry
+%\thesis{Master thesis}{Diplomová práca} %typ prace
+\submissiondate{09}{10}{2024}
+%\fieldofstudy{9.2.1 Informatika}
+%\studyprogramme{Informatika}
+%\city{Košice} %mesto
+\keywords{artificial intelligence, deep reinforcement learning, machine learning, game, 
+difficulty optimization, agent, training}
+{ umelá inteligencia, hlboké posilňovacie učenie, strojové učenie, hra, 
+optimalizácia náročnosti, agent, tréning}
+%\declaration{som nepodvadzal}
+
+\abstract{%
+    % english 
+	%\blindtext
+    Difficulty balancing is one of the main challenges in game development. 
+    Most often this process is done manually based on player feedback. 
+    However, this approach is time-consuming and inefficient due to the varying abilities of the players, which requires automation. 
+    In this work, we show a method to automatically tune the difficulty of an \acrshort{ai} in a shooter game using Bayesian optimization against another \acrshort{ai}. 
+    Test results show that this method successfully balances the abilities of the game agents. 
+    Moreover, the better the opponent plays, the faster and more accurately the values of the tuned parameters converge. 
+    Hence, Bayesian optimization can accurately select appropriate parameters at relatively small time intervals 
+    taking into account the stochastic form of the game, 
+    making this approach efficient and computationally inexpensive. 
+    Furthermore, it shows that the system can be extended to play directly against humans.  
+}{%
+    % slovak 
+	%\blindtext
+    Vyváženie náročnosti je jednou z hlavných úloh pri vývoji hry. 
+    Najčastejšie sa tento proces vykonáva ručne na základe spätnej väzby od hráčov. 
+    Tento prístup je však časovo náročný a neefektívny vzhľadom na rôzne schopnosti hráčov, 
+    čo si vyžaduje automatizáciu. 
+    V tejto práci ukážeme spôsob automatického ladenia náročnosti \acrshort{ai} v strieľačke pomocou Bayesovskej optimalizácie
+    voči inej \acrshort{ai}. 
+    Výsledky testov ukazujú, že táto metóda úspešne vyvažuje schopnosti herných agentov. 
+    Navyše, čím lepšie hrá súper, tým rýchlejšie a presnejšie konvergujú hodnoty vyladených parametrov.
+    Z toho vyplýva, že Bayesovská optimalizácia dokáže presne vyberať vhodné parametre v relatívne malých časových intervaloch 
+    berúc do úvahy stochastickú podobu hry, vďaka čomu je tento prístup efektívny a výpočtovo lacný. 
+    Okrem toho to ukazuje, že systém sa dá rozšíriť na hru priamo proti ľuďom.  
+}
+
+\acknowledgment{
+    Na tomto mieste by som rád poďakoval svojmu vedúcemu práce Ing. Eugenovi Šlapakovi, PhD.
+    za jeho čas a odborné vedenie počas riešenia mojej záverečnej práce.
+
+    Rovnako by som sa rád poďakoval svojim rodičom a priateľom za ich podporu a povzbudzovanie 
+    počas celého môjho štúdia.
+}
+% if you want to work only on selected chapters
+%\includeonly{chapters/analyza} %,chapters/synteza}
+
+% Load acronyms
+\input{acronyms}
+
+
+%% -----------------------------------------------------------------
+%%          _                                       _   
+%%       __| | ___   ___ _   _ _ __ ___   ___ _ __ | |_ 
+%%      / _` |/ _ \ / __| | | | '_ ` _ \ / _ \ '_ \| __|
+%%     | (_| | (_) | (__| |_| | | | | | |  __/ | | | |_ 
+%%      \__,_|\___/ \___|\__,_|_| |_| |_|\___|_| |_|\__|
+%%                                                      
+%% -----------------------------------------------------------------
+
+\begin{document}
+%% Title page, abstract, declaration etc.:
+\frontmatter{}
+
+%% List of code listings, if you are using package minted
+%\listoflistings
+
+%\pagenumbering{arabic}
+
+%% Chapters
+\include{chapters/introduction}
+\include{chapters/analysis}
+\include{chapters/synthesis}
+\include{chapters/evaluation}
+\include{chapters/summary}
+
+% good linebraking of bibtex url
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+
+%% The bibliography
+\printbibliography[heading=bibintoc]
+
+\label{theend} % the last page of the thesis
+
+% List of acronyms
+\printglossary[type=\acronymtype,title={\acrlistname}]
+
+% Glossaries
+\printglossary
+
+%% Appendix
+\include{appendixes/list}
+\appendix
+\renewcommand\chaptername{\appendixname}
+\include{appendixes/prilohaa}
+
+% zivotopis autora
+%\curriculumvitae\protect
+%Táto časť\/ je nepovinná. Autor tu môže uviesť\/ svoje biografické
+%údaje, údaje o~záujmoch, účasti na~projektoch, účasti na~súťažiach,
+%získané ocenenia, zahraničné pobyty na~praxi, domácu prax, publikácie
+%a~pod.
+
+\end{document}

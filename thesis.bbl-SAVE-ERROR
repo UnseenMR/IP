@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{whatisdevops}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc1c8237d565853785a67ece0b343fa0}{%
+           family={codefresh.io},
+           familyi={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{fullhash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{fullhashraw}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{bibnamehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authorbibnamehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authornamehash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authorfullhash}{dc1c8237d565853785a67ece0b343fa0}
+      \strng{authorfullhashraw}{dc1c8237d565853785a67ece0b343fa0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What Is Azure DevOps? Services, Examples, and Best Practices}
+      \verb{urlraw}
+      \verb https://codefresh.io/learn/azure-devops/
+      \endverb
+      \verb{url}
+      \verb https://codefresh.io/learn/azure-devops/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
